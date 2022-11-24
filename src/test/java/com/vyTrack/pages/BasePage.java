@@ -1,4 +1,4 @@
 package com.vyTrack.pages;
 
-public class Basepage {
+public class BasePage {
 }
