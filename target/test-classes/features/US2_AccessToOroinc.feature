@@ -1,18 +1,11 @@
-Feature: TryCloud Application login feature
-  User Story:
-  As a user, I should be able to log in. Verify user login fail with invalid credentials
+Feature: Access to the Oroinc Documentation page
+User Story: As a user, I should be access to the Oroinc Documentation page
 
-@wip
-  Scenario Template: Log in as a user
-    Given user on the TryCloud login page
-    When user enters "<invalidUsername>" and enters "<invalidPassword>"
-    When user clicks on login button
-    Then verify "<message>" message should be displayed
+  Scenario: Log in as a user
+    Given user on the home page
+    When user clicks on the question icon
+    Then user accesses the Oronic Documentation page URL: https://doc.oroinc.com/
 
 
-    Examples: invalid credentials
-      | invalidUsername | invalidPassword | message                     |
-      | user9           | Userpass125     | Wrong username or password. |
-      | user140         | userpass123     | Wrong username or password. |
-      | userUser        | userPass123     | Wrong username or password. |
+
 
